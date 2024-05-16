@@ -1,0 +1,131 @@
+/* Common styles for all screen sizes */
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.one{
+  width: 50%;
+  height: 100vh;
+  text-align: center;
+  font-size: 24px;
+}
+.two{
+  width: 50%;
+  height: 100vh;
+ 
+}
+button{
+  width: 100px;
+  height: 8vh;
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+  /* Styles for mobile devices */
+  @media screen and (max-width: 600px) {
+    .main{
+        height: 60vh;
+    }
+    .logo-img{
+      width: 70px;
+    }
+    .one{
+      width: 100%;
+      height: 60vh;
+      font-size: 18px;
+    
+  }
+  .two{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+  justify-content: center;
+  }
+  .img-two{
+    width: initial;
+    height: inherit;
+    display: flex;
+  justify-content: center;
+  }
+}
+  
+  /* Styles for tablets */
+  @media screen and (min-width: 601px) and (max-width:899px) {
+   .main{
+    height: 80vh;
+   }
+   .logo-img{
+    width: 100px;
+   }
+   .one{
+    width: 100%;
+    height: 50vh;
+    
+    font-size: 20px;
+  
+}
+.two{
+  width: 100%;
+    height: 80vh;
+   
+    display: flex;
+  justify-content: center;
+  
+}
+.img-two{
+  width: initial;
+  height: initial;
+  display: flex;
+  justify-content: center;
+}
+  }
+  
+  
+  /* Styles for laptops and desktops */
+  @media screen and (min-width: 900px)  {
+    .main{
+        height: 100vh;
+    }
+    .one{
+      width: 50%;
+      height: 80vh;
+      
+      font-size: 24px;
+    }
+    .two{
+      width: 50%;
+      height: 80vh;
+     
+     
+      display: flex;
+  justify-content: center;
+    }
+    .main-two{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .img-two{
+      width: initial;
+      height: inherit;
+      
+    }
+  }
